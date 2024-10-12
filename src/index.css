@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --body_background: white;
+    --body_color: black;
+    --link_color: navy;
+    --color_light: white;
+    --color_dark: black;
+    --button_login_light: black;
+    --button_login_dark: white;
+}
+
+body {
+    background-color: var(--body_background);
+    color: var(--body_color);
+}
+
+[data-theme="dark"] {
+    --body_background: black;
+    --body_color: white;
+    --link_color: rgb(120, 120, 218);
+    --button_login_light: white;
+    --button_login_dark: black;
+}
+
+* {
+    transition: all 0.1s ease-in-out;
+}
+
+#Login {
+    color: var(--button_login_light);
+}
