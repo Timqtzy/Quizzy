@@ -5,11 +5,11 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <React.StrictMode>
     <BrowserRouter basename='Quizzy'>
       <Routes>
         <Route path='*' element={<App />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </React.StrictMode>,
 )
